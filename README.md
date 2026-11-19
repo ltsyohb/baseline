@@ -85,6 +85,14 @@ From the repository root:
 
 ```bash
 python -m compileall AgeMem_Qwen_NoRL joint_baseline_20261110
+python AgeMem_Qwen_NoRL/test_offline.py
+python AgeMem_Qwen_NoRL/test_experiments.py
+```
+
+After the external plan and evidence files are in place, run the tests that
+exercise frozen plans and saved model traces:
+
+```bash
 python -m unittest discover -s AgeMem_Qwen_NoRL -p 'test_*.py' -v
 python joint_baseline_20261110/joint_pipeline_v4.py freeze
 python joint_baseline_20261110/joint_pipeline_v4.py preflight
