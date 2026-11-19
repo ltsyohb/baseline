@@ -1,0 +1,32 @@
+# Local data, datasets, model files and generated runs
+**/02_data/*
+!**/02_data/README.md
+**/04_runs/
+**/05_results/*
+!**/05_results/*.py
+!**/05_results/README.md
+**/data/*.json
+**/data/*.jsonl
+**/data/*.sha256
+**/state/
+**/logs/
+**/models/
+**/*.tar.gz
+**/*.zip
+**/.agemem*
+**/__pycache__/
+**/*.pyc
+*.env
+.env
+*.key
+*.pem
+service-evidence*.json
+control/
+
+# Local development output
+.pytest_cache/
+.mypy_cache/
+.coverage
+dist/
+build/
+*.egg-info/
